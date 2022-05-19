@@ -11,11 +11,11 @@ Requirements
 Role Variables
 --------------
 
-VARs in default:
-VECTOR_VER: "0.21.2"
-VECTOR_DOWNLOAD_DIR: "/vectordistrib"
-VECTOR_DIR: "/vector"
-VECTOR_DATA: "/var/lib/vector"
+VARs in default:  
+VECTOR_VER: "0.21.2"  
+VECTOR_DOWNLOAD_DIR: "/vectordistrib"  
+VECTOR_DIR: "/vector"  
+VECTOR_DATA: "/var/lib/vector"  
 
 
 
