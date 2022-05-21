@@ -1,0 +1,16 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: check vector conf file exist
+    ansible.builtin.stat:
+      path: "/vector/config/vector.yaml"
+    register: st
+
+  - name: chk conf exist assert
+    assert:
+      that:
+      -  "st.stat.exists == true"
