@@ -13,3 +13,8 @@ provisioner:
   name: ansible
 verifier:
   name: ansible
+
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
