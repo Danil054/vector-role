@@ -1,0 +1,15 @@
+node {
+    stage("Git checkout"){
+        git branch: 'main', url: 'https://github.com/Danil054/netology-ansible.git'
+    }
+
+    stage("Run playbook"){
+        if (env.prod_run.toBoolean()){
+            sh 'ansible-playbook site.yml -i inventory/prod.yml'
+        }
+        else{
+            sh 'ansible-playbook -i inventory/prod.yml site.yml --check --diff '
+        }
+
+    }
+}
