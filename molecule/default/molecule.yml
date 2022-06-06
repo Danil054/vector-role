@@ -9,8 +9,8 @@ platforms:
     image: docker.io/pycontribs/centos:8
     pre_build_image: true
 
-  - name: instance2
-    image: docker.io/pycontribs/ubuntu:latest
+  #- name: instance2
+     #image: docker.io/pycontribs/ubuntu:latest
 
 provisioner:
   name: ansible
